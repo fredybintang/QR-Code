@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Guest {
+  id       String   @id @default(uuid())
+  name     String
+  no_telp  Int
+  alamat   String
+  qrcode   String
+  status   Boolean  @default(false)
+  j_hadir  DateTime @default(now())
+  updateAt DateTime @updatedAt
+}

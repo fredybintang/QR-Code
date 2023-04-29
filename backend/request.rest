@@ -1,0 +1,32 @@
+GET http://localhost:5000/guest
+
+###
+GET http://localhost:5000/guest/1
+
+###
+POST http://localhost:5000/guest
+Content-Type: application/json
+
+{
+    "id": "1",
+    "name": "Test",
+    "no_telp": 8123,
+    "alamat": "Jalan-jalan",
+    "qrcode": "123456",
+    "status": false
+}
+
+###
+PATCH  http://localhost:5000/guest/43154552-b90d-47f8-9a0c-220253518e9f
+Content-Type: application/json
+
+{
+    "name": "Aku Baru",
+    "no_telp": 8123,
+    "alamat": "Jalan-jalan",
+    "qrcode": "123456",
+    "status": true
+}
+
+###
+DELETE  http://localhost:5000/guest/688ff3c2-7c8f-4243-9315-88c39c669234

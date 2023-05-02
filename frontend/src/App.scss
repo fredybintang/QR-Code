@@ -1,3 +1,260 @@
-.component {
-    margin-left: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Nunito&display=swap');
+
+.body {
+    width: 98vw;
+}
+
+.wrap {
+    margin: auto;
+    width: 375px;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.modal {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #8FCE9D 0%, #61553B 100%);
+    h3 {
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 24px;
+        color: #F4F4F4;
+    }
+    h1 {
+        font-family: 'nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 20px;
+        color: #F4F4F4;
+    }
+    h2 {
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 10px;
+        color: #F4F4F4;
+    }
+    h4 {
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 10px;
+        color: #F4F4F4;
+    }
+    .couple-name {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+    .footer {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    }
+    button {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -90%);
+        box-shadow: 5px 6px 14px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-family: 'nunito';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #F4F4F4;
+        background: linear-gradient(90deg, #736649 0%, rgba(115, 102, 73, 0.5) 103.37%);
+        &:hover {
+            border-color: #739278;
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    height: 110vh;
+    background-image: url('./assets/images/couple-header.png');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .bg-linear {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 70vh;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 6.67%, rgba(217, 217, 217, 0) 100%);
+    }
+    .title {
+        position: relative;
+        z-index: 1;
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #F4F4F4;
+        margin-top: 20px;
+    }
+    .couple-name {
+        position: relative;
+        z-index: 1;
+        color: #F4F4F4;
+    }
+    h1 {
+        font-family: 'nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 5px;
+        color: #F4F4F4;
+    }
+    h4 {
+        padding-top: 10px;
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 10px;
+        color: #F4F4F4;
+    }
+    .btnLive {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 60%);
+        z-index: 10;
+        width: 100%;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button {
+        width: 60%;
+        font-family: 'nunito';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #F4F4F4;
+        background: linear-gradient(90deg, #736649 0%, rgba(115, 102, 73, 0.9) 103.37%);
+    }
+}
+
+.couple {
+    position: relative;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    margin-top: -100px;
+    background: url(./assets/images/couple-section.png);
+    background-size: cover;
+    .title {
+        margin-top: 100px;
+        margin-bottom: 10px;
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        color: #F4F4F4;
+    }
+    &-pria {
+        color: #FFFFFF;
+        .name {
+            margin-top: 10px;
+            h2 {
+                font-family: 'Cormorant Infant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 20px;
+            }
+            h4 {
+                font-family: 'nunito';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.8rem;
+                line-height: 10px;
+            }
+        }
+    }
+    &-wanita {
+        color: #FFFFFF;
+        margin-top: 40px;
+        .name {
+            margin-top: 10px;
+            h2 {
+                font-family: 'Cormorant Infant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 20px;
+            }
+            h4 {
+                font-family: 'nunito';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.8rem;
+                line-height: 10px;
+            }
+        }
+    }
+}
+
+.video {
+    background: url('./assets/images/dirty-bg.png');
+    margin-top: -130px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .qrcode {
+        h1 {
+            font-family: 'nunito';
+            font-style: normal;
+            font-size: 2rem;
+            line-height: 10px;
+            color: #9C7756;
+            text-transform: uppercase;
+        }
+        h4 {
+            font-family: 'nunito';
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #9C7756;
+            margin-bottom: 20px;
+        }
+        &-content {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            canvas {
+                width: 160px !important;
+                height: 160px !important;
+            }
+            &:hover {
+                border: #61553B 5px solid;
+            }
+        }
+    }
 }
